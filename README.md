@@ -1,3 +1,5 @@
+Crear programa en C
+
 int main()
 {
     //Crear un programa que permita calcular el area de un trapecio. El programa debe pedir al usuario los datos básicos necesarios y hacer el calculo.

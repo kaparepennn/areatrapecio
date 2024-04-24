@@ -1,19 +1,23 @@
-Crear programa en C
+#include <stdio.h>
 
 int main()
 {
-    //Crear un programa que permita calcular el area de un trapecio. El programa debe pedir al usuario los datos básicos necesarios y hacer el calculo.
+
+    float b, B, a, area;
     
-    //Declaramos variables
-    int b, B;
-    float area;
+    printf("Buen día. Por favor ingrese el valor de la base superior del trapecio:\n ");
+    scanf("%f", &b);
     
-    printf("Buen día, por favor ingrese los valores del trapecio:\n ");
-    scanf("%d%d", &b, &B);
+    printf("Ahora ingrese el valor de la base inferior del trapecio:\n ");
+    scanf("%f", &B);
     
-    area=(b+B)/2;
-    printf("\narea=%f", area);
+    printf("Por último ingrese el valor de la altura del trapecio:\n ");
+    scanf("%f", &a);
+    
+    //Lógica del programa
+    
+    area= ((b + B) *a) /2;
+    printf("Este es el área del trapecio: %.2f\n", area);
     
     return 0;
-
 }
